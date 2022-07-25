@@ -11,7 +11,7 @@ client = Client(account_sid, auth_token)
 
 def sendMsg():
     msgs = []
-    with open("danmessages.txt") as f:
+    with open("messages.txt") as f:
         msgs = f.readlines()
 
     randIndex = random.randint(0, len(msgs) - 1)
